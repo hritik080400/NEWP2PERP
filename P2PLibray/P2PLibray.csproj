@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BALP2P.cs" />
-    <Compile Include="Items.cs" />
     <Compile Include="P2PClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
