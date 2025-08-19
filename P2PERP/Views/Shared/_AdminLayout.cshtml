@@ -45,40 +45,11 @@
 
     <script src="~/Content/assets/js/config.js"></script>
 
-
-    <style>
-        .scroll-container{
-/*            width: 350px;*/
-            height: 70vh;
-            overflow-y: scroll;
-            scroll-behavior: smooth;
-            scrollbar-width:none;
-/*            position:fixed;*/
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        ::-webkit-scrollbar {
-            width: 3px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #888;
-        }
-
-            ::-webkit-scrollbar-thumb:hover {
-                background: #555;
-            }
+    <link rel="stylesheet" href="~/Content/assets/css/Layout.css" />
 
 
-    </style>
-   
+
+
 </head>
 <body>
     <!-- Layout wrapper -->
@@ -144,9 +115,7 @@
                         <span class="app-brand-text demo menu-text fw-semibold ms-2">Materio</span>
                     </a>
 
-                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
-                        <i class="menu-toggle-icon d-xl-inline-block align-middle"></i>
-                    </a>
+                    
                 </div>
 
                 <div class="menu-inner-shadow"></div>
@@ -184,29 +153,29 @@
 
 
                             @*<li class="menu-item">
-            <a href="https://demos.themeselection.com/materio-bootstrap-html-admin-template/html/vertical-menu-template/app-ecommerce-dashboard.html"
-               target="_blank"
-               class="menu-link">
-                <div data-i18n="eCommerce">eCommerce</div>
-                <div class="badge rounded-pill bg-label-primary fs-tiny ms-auto">Pro</div>
-            </a>
-        </li>
-        <li class="menu-item">
-            <a href="https://demos.themeselection.com/materio-bootstrap-html-admin-template/html/vertical-menu-template/app-logistics-dashboard.html"
-               target="_blank"
-               class="menu-link">
-                <div data-i18n="Logistics">Logistics</div>
-                <div class="badge rounded-pill bg-label-primary fs-tiny ms-auto">Pro</div>
-            </a>
-        </li>
-        <li class="menu-item">
-            <a href="https://demos.themeselection.com/materio-bootstrap-html-admin-template/html/vertical-menu-template/app-academy-dashboard.html"
-               target="_blank"
-               class="menu-link">
-                <div data-i18n="Academy">Academy</div>
-                <div class="badge rounded-pill bg-label-primary fs-tiny ms-auto">Pro</div>
-            </a>
-        </li>*@
+                                    <a href="https://demos.themeselection.com/materio-bootstrap-html-admin-template/html/vertical-menu-template/app-ecommerce-dashboard.html"
+                                       target="_blank"
+                                       class="menu-link">
+                                        <div data-i18n="eCommerce">eCommerce</div>
+                                        <div class="badge rounded-pill bg-label-primary fs-tiny ms-auto">Pro</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="https://demos.themeselection.com/materio-bootstrap-html-admin-template/html/vertical-menu-template/app-logistics-dashboard.html"
+                                       target="_blank"
+                                       class="menu-link">
+                                        <div data-i18n="Logistics">Logistics</div>
+                                        <div class="badge rounded-pill bg-label-primary fs-tiny ms-auto">Pro</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="https://demos.themeselection.com/materio-bootstrap-html-admin-template/html/vertical-menu-template/app-academy-dashboard.html"
+                                       target="_blank"
+                                       class="menu-link">
+                                        <div data-i18n="Academy">Academy</div>
+                                        <div class="badge rounded-pill bg-label-primary fs-tiny ms-auto">Pro</div>
+                                    </a>
+                                </li>*@
                         </ul>
                     </li>
 
@@ -630,7 +599,7 @@
             <div class="layout-page">
                 <!-- Navbar -->
 
-                <nav class="layout-navbar container-xxl navbar-detached navbar navbar-expand-xl align-items-center bg-navbar-theme"
+                <nav class="layout-navbar px-5  container-fluid navbar-detached navbar navbar-expand-xl align-items-center bg-navbar-theme"
                      id="layout-navbar">
                     <div class="layout-menu-toggle navbar-nav align-items-xl-center me-4 me-xl-0 d-xl-none">
                         <a class="nav-item nav-link px-0 me-xl-6" href="javascript:void(0)">
@@ -650,45 +619,247 @@
                             </div>
                         </div>
                         <!-- /Search -->
-                        <!-- /style switcher --->
-                        <li class="nav-item dropdown me-sm-2 me-xl-0">
-                            <!-- Style Switcher --><a class="nav-link dropdown-toggle hide-arrow btn btn-icon btn-text-secondary rounded-pill waves-effect" id="nav-theme" href="javascript:void(0);" data-bs-toggle="dropdown" aria-label="Toggle theme (light)" aria-expanded="false">
-                                <i class="ri-sun-line icon-base ri icon-22px theme-icon-active"></i>
-                                <span class="d-none ms-2" id="nav-theme-text">Toggle theme</span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-theme-text">
-                                <li>
-                                    <button type="button" class="dropdown-item align-items-center waves-effect active" data-bs-theme-value="light" aria-pressed="true">
-                                        <span> <i class="icon-base ri ri-sun-line icon-md me-3" data-icon="sun-line"></i>Light</span>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button type="button" class="dropdown-item align-items-center waves-effect" data-bs-theme-value="dark" aria-pressed="false">
-                                        <span> <i class="icon-base ri ri-moon-clear-line icon-md me-3" data-icon="moon-clear-line"></i>Dark</span>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button type="button" class="dropdown-item align-items-center waves-effect" data-bs-theme-value="system" aria-pressed="false">
-                                        <span> <i class="icon-base ri ri-computer-line icon-md me-3" data-icon="computer-line"></i>System</span>
-                                    </button>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- /style switcher --->
+
 
 
 
                         <ul class="navbar-nav flex-row align-items-center ms-md-auto">
-                            <!-- Place this tag where you want the button to render. -->
-                            <li class="nav-item lh-1 me-4">
-                                <a class="github-button"
-                                   href="https://github.com/themeselection/materio-bootstrap-html-admin-template-free"
-                                   data-icon="octicon-star"
-                                   data-size="large"
-                                   data-show-count="true"
-                                   aria-label="Star themeselection/materio-html-admin-template-free on GitHub">Star</a>
-                            </li>
 
+                            <!-- 🔹 Style Switcher Dropdown -->
+                            <li class="nav-item dropdown me-sm-2 me-xl-0">
+                                <a class="nav-link dropdown-toggle hide-arrow btn btn-icon btn-text-secondary rounded-pill waves-effect"
+                                   id="nav-theme"
+                                   href="javascript:void(0);"
+                                   data-bs-toggle="dropdown"
+                                   aria-label="Toggle theme">
+                                    <i class="ri-sun-line icon-base ri icon-22px theme-icon-active" id="theme-icon"></i>
+                                    <span class="d-none ms-2" id="nav-theme-text">Toggle theme</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-theme-text">
+                                    <li>
+                                        <button type="button" class="dropdown-item align-items-center waves-effect"
+                                                data-bs-theme-value="light">
+                                            <i class="ri ri-sun-line icon-md me-3"></i> Light
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="dropdown-item align-items-center waves-effect"
+                                                data-bs-theme-value="dark">
+                                            <i class="ri ri-moon-clear-line icon-md me-3"></i> Dark
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="dropdown-item align-items-center waves-effect"
+                                                data-bs-theme-value="system">
+                                            <i class="ri ri-computer-line icon-md me-3"></i> System
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Style Switcher -->
+                            <!-- Notification -->
+                            <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
+                                <a class="nav-link dropdown-toggle hide-arrow btn btn-icon btn-text-secondary rounded-pill waves-effect" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    <span class="position-relative">
+                                        <i class="icon-base ri ri-notification-2-line icon-22px"></i>
+                                        <span class="badge rounded-pill bg-danger badge-dot badge-notifications border"></span>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end p-0">
+                                    <li class="dropdown-menu-header border-bottom">
+                                        <div class="dropdown-header d-flex align-items-center py-3">
+                                            <h6 class="mb-0 me-auto">Notification</h6>
+                                            <div class="d-flex align-items-center h6 mb-0">
+                                                <span class="badge bg-label-primary rounded-pill me-2">8 New</span>
+                                                <a href="javascript:void(0)" class="dropdown-notifications-all p-2" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Mark all as read" data-bs-original-title="Mark all as read">
+                                                    <i class="icon-base ri ri-mail-open-line text-heading"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-notifications-list scrollable-container ps">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item waves-effect">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <img src="../../assets/img/avatars/1.png" alt="alt" class="rounded-circle">
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="small mb-50">Congratulation Lettie 🎉</h6>
+                                                        <small class="mb-1 d-block text-body">Won the monthly best seller gold badge</small>
+                                                        <small class="text-body-secondary">1h ago</small>
+                                                    </div>
+                                                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-read"> <span class="badge badge-dot"></span></a>
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-archive"> <span class="icon-base ri ri-close-line"></span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item waves-effect">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <span class="avatar-initial rounded-circle bg-label-danger">CF</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="small mb-50">Charles Franklin</h6>
+                                                        <small class="mb-1 d-block text-body">Accepted your connection</small>
+                                                        <small class="text-body-secondary">12hr ago</small>
+                                                    </div>
+                                                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-read"> <span class="badge badge-dot"></span></a>
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-archive"> <span class="icon-base ri ri-close-line"></span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read waves-effect">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <img src="../../assets/img/avatars/2.png" alt="alt" class="rounded-circle">
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="small mb-50">New Message ✉️</h6>
+                                                        <small class="mb-1 d-block text-body">You have new message from Natalie</small>
+                                                        <small class="text-body-secondary">1h ago</small>
+                                                    </div>
+                                                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-read"> <span class="badge badge-dot"></span></a>
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-archive"> <span class="icon-base ri ri-close-line"></span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item waves-effect">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <span class="avatar-initial rounded-circle bg-label-success">
+                                                                <i class="icon-base ri ri-car-line"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="small mb-50">Whoo! You have new order 🛒</h6>
+                                                        <small class="mb-1 d-block text-body">ACME Inc. made new order $1,154</small>
+                                                        <small class="text-body-secondary">1 day ago</small>
+                                                    </div>
+                                                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-read"> <span class="badge badge-dot"></span></a>
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-archive"> <span class="icon-base ri ri-close-line"></span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read waves-effect">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <img src="../../assets/img/avatars/9.png" alt="alt" class="rounded-circle">
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="small mb-50">Application has been approved 🚀</h6>
+                                                        <small class="mb-1 d-block text-body">Your ABC project application has been approved.</small>
+                                                        <small class="text-body-secondary">2 days ago</small>
+                                                    </div>
+                                                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-read"> <span class="badge badge-dot"></span></a>
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-archive"> <span class="icon-base ri ri-close-line"></span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read waves-effect">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <span class="avatar-initial rounded-circle bg-label-success">
+                                                                <i class="icon-base ri ri-pie-chart-2-line"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="small mb-50">Monthly report is generated</h6>
+                                                        <small class="mb-1 d-block text-body">July monthly financial report is generated </small>
+                                                        <small class="text-body-secondary">3 days ago</small>
+                                                    </div>
+                                                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-read"> <span class="badge badge-dot"></span></a>
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-archive"> <span class="icon-base ri ri-close-line"></span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read waves-effect">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <img src="../../assets/img/avatars/5.png" alt="alt" class="rounded-circle">
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="small mb-50">Send connection request</h6>
+                                                        <small class="mb-1 d-block text-body">Peter sent you connection request</small>
+                                                        <small class="text-body-secondary">4 days ago</small>
+                                                    </div>
+                                                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-read"> <span class="badge badge-dot"></span></a>
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-archive"> <span class="icon-base ri ri-close-line"></span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item waves-effect">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <img src="../../assets/img/avatars/6.png" alt="alt" class="rounded-circle">
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="small mb-50">New message from Jane</h6>
+                                                        <small class="mb-1 d-block text-body">Your have new message from Jane</small>
+                                                        <small class="text-body-secondary">5 days ago</small>
+                                                    </div>
+                                                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-read"> <span class="badge badge-dot"></span></a>
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-archive"> <span class="icon-base ri ri-close-line"></span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read waves-effect">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <span class="avatar-initial rounded-circle bg-label-warning">
+                                                                <i class="icon-base ri ri-error-warning-line"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="small mb-50">CPU is running high</h6>
+                                                        <small class="mb-1 d-block text-body">CPU Utilization Percent is currently at 88.63%,</small>
+                                                        <small class="text-body-secondary">5 days ago</small>
+                                                    </div>
+                                                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-read"> <span class="badge badge-dot"></span></a>
+                                                        <a href="javascript:void(0)" class="dropdown-notifications-archive"> <span class="icon-base ri ri-close-line"></span></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div>
+                                    </li>
+                                    <li class="border-top">
+                                        <div class="d-grid p-4">
+                                            <a class="btn btn-primary btn-sm d-flex h-px-34 waves-effect waves-light" href="javascript:void(0);">
+                                                <small class="align-middle">View all notifications</small>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--/ Notification -->
                             <!-- User -->
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                                 <a class="nav-link dropdown-toggle hide-arrow p-0"
@@ -760,14 +931,14 @@
                 <!-- Content wrapper -->
                 <div class="content-wrapper scroll-container">
 
-                   
-                        @RenderBody()
 
-                        @*<hr />
+                    @RenderBody()
+
+                    @*<hr />
                         <footer>
                             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
                         </footer>*@
-                    
+
 
 
                     @*<div class="content-backdrop fade"></div>*@
@@ -781,11 +952,9 @@
         <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
-    
-
     @*@Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)*@
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)*@
 
 
     <!-- Core JS -->
@@ -810,6 +979,195 @@
 
     <!-- Page JS -->
     <script src="~/Content/assets/js/dashboards-analytics.js"></script>
+
+
+
+    <!-- Enhanced Theme Switcher Script with Menu/Sidebar Support -->
+    <script>
+        (function () {
+            // Function to get the current theme from localStorage or system preference
+            const getPreferredTheme = () => {
+                const storedTheme = localStorage.getItem('theme');
+                if (storedTheme) {
+                    return storedTheme;
+                }
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            };
+
+            // Function to set the theme
+            const setTheme = (theme) => {
+                const effectiveTheme = theme === 'system'
+                    ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+                    : theme;
+
+                // Set the Bootstrap theme attribute
+                document.documentElement.setAttribute('data-bs-theme', effectiveTheme);
+
+                // Update the theme icon
+                updateThemeIcon(theme);
+
+                // Update the active state in the dropdown
+                setActiveThemeItem(theme);
+
+                // Store the theme preference
+                localStorage.setItem('theme', theme);
+
+                // Update all theme-dependent elements
+                updateThemeColors(effectiveTheme);
+            };
+
+            // Function to update the theme icon
+            const updateThemeIcon = (theme) => {
+                const themeIcon = document.getElementById('theme-icon');
+                if (!themeIcon) return;
+
+                if (theme === 'light') {
+                    themeIcon.className = "ri-sun-line icon-base ri icon-22px theme-icon-active";
+                } else if (theme === 'dark') {
+                    themeIcon.className = "ri-moon-clear-line icon-base ri icon-22px theme-icon-active";
+                } else {
+                    themeIcon.className = "ri-computer-line icon-base ri icon-22px theme-icon-active";
+                }
+            };
+
+            // Function to set active item in dropdown
+            const setActiveThemeItem = (theme) => {
+                document.querySelectorAll('[data-bs-theme-value]').forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.getAttribute('data-bs-theme-value') === theme) {
+                        btn.classList.add('active');
+                    }
+                });
+            };
+
+            // Function to update all theme-dependent colors
+            const updateThemeColors = (theme) => {
+                // Update CSS variables
+                if (theme === 'dark') {
+                    // Body and general colors
+                    document.documentElement.style.setProperty('--body-bg', '#2b2c40');
+                    document.documentElement.style.setProperty('--navbar-bg', '#2b2c40');
+                    document.documentElement.style.setProperty('--card-bg', '#373951');
+                    document.documentElement.style.setProperty('--card-text', '#e2e2e6');
+
+                    // Sidebar/menu specific colors
+                    document.documentElement.style.setProperty('--sidebar-bg', '#2b2c40');
+                    document.documentElement.style.setProperty('--sidebar-text', '#e2e2e6');
+                    document.documentElement.style.setProperty('--menu-item-active-bg', 'rgba(105, 108, 255, 0.16)');
+                    document.documentElement.style.setProperty('--menu-item-active-text', '#696cff');
+                    document.documentElement.style.setProperty('--menu-item-hover-bg', 'rgba(105, 108, 255, 0.08)');
+
+                    // Add dark mode classes to sidebar
+                    const menu = document.querySelector('.layout-menu');
+                    if (menu) {
+                        menu.classList.add('bg-menu-theme-dark');
+                        menu.classList.remove('bg-menu-theme');
+                    }
+                } else {
+                    // Body and general colors
+                    document.documentElement.style.setProperty('--body-bg', '#f5f5f9');
+                    document.documentElement.style.setProperty('--navbar-bg', '#ffffff');
+                    document.documentElement.style.setProperty('--card-bg', '#ffffff');
+                    document.documentElement.style.setProperty('--card-text', '#6f6b7d');
+
+                    // Sidebar/menu specific colors
+                    document.documentElement.style.setProperty('--sidebar-bg', '#ffffff');
+                    document.documentElement.style.setProperty('--sidebar-text', '#6f6b7d');
+                    document.documentElement.style.setProperty('--menu-item-active-bg', 'rgba(105, 108, 255, 0.16)');
+                    document.documentElement.style.setProperty('--menu-item-active-text', '#696cff');
+                    document.documentElement.style.setProperty('--menu-item-hover-bg', 'rgba(105, 108, 255, 0.08)');
+
+                    // Remove dark mode classes from sidebar
+                    const menu = document.querySelector('.layout-menu');
+                    if (menu) {
+                        menu.classList.remove('bg-menu-theme-dark');
+                        menu.classList.add('bg-menu-theme');
+                    }
+                }
+            };
+
+            // Initialize the theme
+            const currentTheme = getPreferredTheme();
+            setTheme(currentTheme);
+
+            // Add event listeners to theme switcher buttons
+            document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+                button.addEventListener('click', () => {
+                    const theme = button.getAttribute('data-bs-theme-value');
+                    setTheme(theme);
+                });
+            });
+
+            // Watch for system theme changes
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+                if (localStorage.getItem('theme') === 'system') {
+                    setTheme('system');
+                }
+            });
+
+        })();
+
+        // Menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.layout-menu-toggle');
+            const menu = document.querySelector('.layout-menu');
+            const overlay = document.querySelector('.layout-overlay');
+
+            if (menuToggle && menu && overlay) {
+                menuToggle.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    // Toggle menu visibility
+                    menu.classList.toggle('layout-menu-hidden');
+
+                    // Toggle overlay
+                    overlay.classList.toggle('show');
+
+                    // Store menu state in localStorage
+                    const isHidden = menu.classList.contains('layout-menu-hidden');
+                    localStorage.setItem('menuHidden', isHidden);
+                });
+
+                // Close menu when clicking overlay
+                overlay.addEventListener('click', function () {
+                    menu.classList.add('layout-menu-hidden');
+                    overlay.classList.remove('show');
+                    localStorage.setItem('menuHidden', true);
+                });
+
+                // Check saved state from localStorage
+                const menuHidden = localStorage.getItem('menuHidden') === 'true';
+                if (menuHidden) {
+                    menu.classList.add('layout-menu-hidden');
+                    overlay.classList.add('show');
+                }
+            }
+
+            // Handle window resize
+            function handleResize() {
+                const menu = document.querySelector('.layout-menu');
+                const overlay = document.querySelector('.layout-overlay');
+
+                if (window.innerWidth >= 1200) { // Desktop
+                    menu?.classList.remove('layout-menu-hidden');
+                    overlay?.classList.remove('show');
+                } else { // Mobile
+                    const menuHidden = localStorage.getItem('menuHidden') === 'true';
+                    if (menuHidden) {
+                        menu?.classList.add('layout-menu-hidden');
+                    }
+                }
+            }
+
+            window.addEventListener('resize', handleResize);
+            handleResize(); // Initial check
+        });
+
+    </script>
+
+
+
+
 
 </body>
 </html>
