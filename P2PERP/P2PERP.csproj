@@ -130,6 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\assets\css\demo.css" />
+    <Content Include="Content\assets\css\Layout.css" />
     <Content Include="Content\assets\img\avatars\1.png" />
     <Content Include="Content\assets\img\avatars\2.png" />
     <Content Include="Content\assets\img\avatars\3.png" />

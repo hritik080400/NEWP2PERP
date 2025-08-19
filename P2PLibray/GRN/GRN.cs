@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace P2PLibray
+namespace P2PLibray.GRN
 {
-    internal class P2PClass
+    internal class GRN
     {
-
     }
 }
