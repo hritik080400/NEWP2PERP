@@ -3,14 +3,6 @@
 * File include item demo only specific css only
 ******************************************************************************/
 
-
-
-.menu-item.active > .menu-link:not(.menu-toggle) {
-    background: linear-gradient(270deg, var(--bs-primary) 0%, color-mix(in sRGB, var(--bs-primary) 52%, var(--bs-white)) 100%);
-    box-shadow: var(--bs-box-shadow-sm);
-    color: var(--bs-menu-active-color);
-}
-
 .menu .app-brand.demo {
   height: 64px;
 }
@@ -94,14 +86,10 @@
 ******************************************************************************/
 
 .layout-demo-wrapper {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 1.25rem;
@@ -113,6 +101,3 @@
   text-align: center;
   margin-top: 1.25rem;
 }
-
-
-

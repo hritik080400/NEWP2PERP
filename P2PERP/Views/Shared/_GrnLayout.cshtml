@@ -47,6 +47,22 @@
 
     <link rel="stylesheet" href="~/Content/assets/css/Layout.css" />
 
+    <!-- DataTable Css-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css" />
+
+    @*<link rel="stylesheet" href="~/Content/assets/css/DataTable.css" />*@
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.1.1/css/buttons.dataTables.min.css" />
+
+
+
+
+    <!--Custom css -->
+
+    <link rel="stylesheet" href="~/Content/assets/css/Style.css" />
+
+
+
 
 
 
@@ -931,9 +947,13 @@
                 <!-- Content wrapper -->
                 <div class="content-wrapper scroll-container">
 
+                    <!-- Content -->
+                    <div class="container-xxl flex-grow-1 container-p-y ">
 
-                    @RenderBody()
+                        @RenderBody()
 
+                    </div>
+                    <!-- / Content -->
                     @*<hr />
                         <footer>
                             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
@@ -1164,6 +1184,36 @@
         });
 
     </script>
+
+
+    <!-- Jquery CDN-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- DataTables core -->
+    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
+
+    <!-- Buttons extension -->
+    <script src="https://cdn.datatables.net/buttons/3.1.1/js/dataTables.buttons.min.js"></script>
+
+    <!-- Dependencies for export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+
+    <!-- Export/Print buttons -->
+    <script src="https://cdn.datatables.net/buttons/3.1.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.1.1/js/buttons.print.min.js"></script>
+
+
+    <!-- Custom DataTable JS -->
+
+    <script src="~/Content/assets/js/DataTable.js"></script>
+
+
+
+
 
 
 
